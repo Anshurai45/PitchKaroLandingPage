@@ -1,9 +1,5 @@
 # Karo Pitch — React App
 
-> An initiative by [KaroStartup](https://karostartup.com)  
-> Built with **React 18** + **Create React App**
-
----
 
 ## 📁 Project Structure
 
@@ -47,85 +43,7 @@ npm start
 ```
 Opens at **http://localhost:3000** with hot reload. ✅
 
----
 
-## 🏗️ Production Build
-```bash
-npm run build
-```
-Creates optimized output in the `build/` folder.
-
----
-
-## 📤 Push to GitHub
-
-### Step 1 — Create GitHub repo
-1. Go to [github.com/new](https://github.com/new)
-2. Name: `karopitch-react`
-3. Set to **Public**, no README/gitignore (already included)
-4. Click **Create repository**
-
-### Step 2 — Push code
-```bash
-cd karopitch-react
-git init
-git add .
-git commit -m "Initial commit: Karo Pitch React app"
-git remote add origin https://github.com/YOUR_USERNAME/karopitch-react.git
-git branch -M main
-git push -u origin main
-```
-
----
-
-## 🌐 Free Deployment Options
-
-### ✅ Option A — Vercel (Best for React)
-1. Go to [vercel.com](https://vercel.com) → Sign up with GitHub
-2. Click **Add New Project** → Import `karopitch-react`
-3. Framework Preset: **Create React App** (auto-detected)
-4. Click **Deploy**
-5. 🚀 Live at: `https://karopitch-react.vercel.app`
-
-Every `git push` → auto redeploy!
-
-### ✅ Option B — Netlify
-1. Go to [netlify.com](https://netlify.com) → Add new site from GitHub
-2. Select `karopitch-react`
-3. Build command: `npm run build`
-4. Publish directory: `build`
-5. Click **Deploy**
-6. 🚀 Live at: `https://karopitch.netlify.app`
-
-### ✅ Option C — GitHub Pages
-```bash
-npm install --save-dev gh-pages
-```
-Add to `package.json`:
-```json
-"homepage": "https://YOUR_USERNAME.github.io/karopitch-react",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-```
-Then run:
-```bash
-npm run deploy
-```
-
----
-
-## 🔄 Update & Redeploy
-```bash
-# Make your changes, then:
-git add .
-git commit -m "Update: describe change"
-git push
-# Vercel/Netlify will auto-redeploy ✅
-```
-
----
 
 ## 🧩 Component Map
 
