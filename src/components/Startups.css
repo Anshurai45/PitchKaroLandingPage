@@ -1,0 +1,40 @@
+.st-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 20px; margin-bottom: 40px;
+}
+.view-all { font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none; }
+.view-all:hover { color: var(--blue-h); }
+
+.st-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.st-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 26px;
+  display: flex; flex-direction: column;
+  transition: box-shadow .25s, transform .25s;
+}
+.st-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.st-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.st-icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; font-size: 22px;
+}
+.stage-pill { font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 100px; text-transform: uppercase; letter-spacing: .5px; }
+.sp-seed  { background: #FEF3C7; color: #92400E; }
+.sp-pre   { background: #EDE9FE; color: #5B21B6; }
+.sp-angel { background: #DCFCE7; color: #166534; }
+.sp-a2    { background: #FFE4E6; color: #9F1239; }
+
+.st-name  { font-size: 18px; font-weight: 800; color: var(--dark); letter-spacing: -.5px; margin-bottom: 4px; }
+.st-cat   { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .8px; color: var(--blue); margin-bottom: 10px; }
+.st-desc  { font-size: 13px; color: var(--muted); line-height: 1.7; flex: 1; }
+.st-footer {
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.st-loc  { font-size: 11px; color: var(--muted); }
+.st-link { font-size: 12px; font-weight: 600; color: var(--blue); text-decoration: none; }
+.st-link:hover { color: var(--blue-h); }
+
+@media (max-width: 900px) { .st-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px) { .st-grid { grid-template-columns: 1fr; } }
