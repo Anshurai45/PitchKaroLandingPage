@@ -45,38 +45,6 @@ Opens at **http://localhost:3000** with hot reload. ✅
 
 
 
-
-
-### ✅ Option C — GitHub Pages
-```bash
-npm install --save-dev gh-pages
-```
-Add to `package.json`:
-```json
-"homepage": "https://YOUR_USERNAME.github.io/karopitch-react",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-```
-Then run:
-```bash
-npm run deploy
-```
-
----
-
-## 🔄 Update & Redeploy
-```bash
-# Make your changes, then:
-git add .
-git commit -m "Update: describe change"
-git push
-# Vercel/Netlify will auto-redeploy ✅
-```
-
----
-
 ## 🧩 Component Map
 
 | Component | Section |
